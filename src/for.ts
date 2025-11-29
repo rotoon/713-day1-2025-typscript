@@ -1,4 +1,4 @@
-let names = [
+let names: string[] = [
   'Johney Deph',
   'Jane Doe',
   'Joey Gana',
@@ -9,9 +9,10 @@ let names = [
   'Ronaldo',
 ]
 for (let i = 0; i < names.length; i++) {
-  if (names[i] && names[i].length > 6) {
-    console.log(`สวัสดีคุณ ${names[i]}`)
+  const name = names[i]
+  if (name && name.length > 6) {
+    console.log(`สวัสดีคุณ ${name}`)
   } else {
-    console.log(`Hello ${names[i]}`)
+    console.log(`Hello ${name}`)
   }
 }
